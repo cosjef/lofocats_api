@@ -36,7 +36,7 @@ The API provides endpoints for interacting with a registry of lost and found cat
 
 # Authentication & Authorization
 
-In order to consume endpoints that require a signed in user (administrator or not) you must first obtain an authentication token by posting to the respective sessions endpoint described above. You have to use this token as the <code>Authorization</code> header of your requests to the desired endpoints.
+In order to consume endpoints that require a signed in user (administrator or not) you must first obtain an authentication token by posting to the respective sessions endpoint described above. You have to use this token as the <code>Authorization</code> header of your requests to the desired endpoints. You must first login as a valid user to obtain the token. It can be found in the Webrick log that recorded the user login. It will be of the form: ae5db014-b2e8-4863-be92-7bb647712758
 
 # Setting up the application
 
