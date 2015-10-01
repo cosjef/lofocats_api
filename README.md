@@ -45,6 +45,7 @@ In order to consume endpoints that require a signed in user (administrator or no
 * Execute <code>rake db:setup</code> to setup the database.
 * Execute <code>rake db:load\_demo\_data</code> to load some demo data to the application.
 * Execute <code>rails server</code> to start the application on the default port.
+* NOTE: The UI will also try to run on the default port (3000). Start the API webrick instance with $ rails server -p3001 to start it on port 3001.
 
 If you loaded the demo data, the following users are available:
 
