@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 # Rails
 gem 'rails', '4.2.4'
 # Database
-gem 'sqlite3'
+#gem 'sqlite3'
+gem "pg"
 
 # Required to use 'has_secure_password' in ActiveRecord
 gem 'bcrypt'
