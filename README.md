@@ -36,7 +36,7 @@ The API provides endpoints for interacting with a registry of lost and found cat
 
 # Authentication & Authorization
 
-In order to consume endpoints that require a signed in user (administrator or not) you must first obtain an authentication token by posting to the respective sessions endpoint described above. You have to use this token as the <code>Authorization</code> header of your requests to the desired endpoints.
+In order to consume endpoints that require a signed in user (administrator or not) you must first obtain an authentication token by posting to the respective sessions endpoint described above. You have to use this token as the <code>Authorization</code> header of your requests to the desired endpoints. The endpoint will return an 401 Unauthorized response with an X-Request-Id header which contains the value to be used with the Authorization header on subsequent requests.
 
 # Setting up the application
 
